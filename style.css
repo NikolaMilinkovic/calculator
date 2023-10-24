@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Roboto:wght@400;700&display=swap');
 body {
     margin: 0px;
     padding: 0vh 10vh;
     background-color: #fcc718f5;
     display: flex;
     flex-direction: column;
+    font-family: 'Quicksand', 'Roboto', sans-serif;
 }
 button{
     border: 2px solid #526D82;
     background-color: #9DB2BF;
+    font-family: 'Quicksand', 'Roboto', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.15) 5.95px 5.95px 2.6px;
+    cursor: pointer;
 }
 .calculator-container{
     user-select: none;
@@ -17,6 +22,7 @@ button{
     border: 2px solid #526D82;
     width: 350px;
     height: 550px;
+    box-shadow: rgba(0, 0, 0, 0.15) 5.95px 5.95px 2.6px;
 }
 .display-container{
     display: flex;
@@ -81,6 +87,10 @@ footer{
         border-radius: 10px;
         min-width: 25px;
         min-height: 25px;
+        transition: all .13s ease-in-out;
+    }
+    button:active{
+        background: #84b0d1;
     }
     .calculator-container{
         display: grid;
@@ -121,6 +131,15 @@ footer{
         margin: 10px 10px;
         font-size: 22px;
         border-radius: 10px;
+        transition: all .13s ease-in-out;
+    }
+    button:hover{
+        background: #84b0d1;
+        color: #212121;
+        transform: translateY(-0.2rem);
+    }
+    button:active{
+        transform: translateY(0rem);
     }
     .calculator-container{
         display: grid;
