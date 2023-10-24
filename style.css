@@ -90,7 +90,8 @@ footer{
         transition: all .13s ease-in-out;
     }
     button:active{
-        background: #84b0d1;
+        background-color: #84b0d1;
+        transform: translateY(+0.13rem);
     }
     .calculator-container{
         display: grid;

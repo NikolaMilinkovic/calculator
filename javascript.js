@@ -3,7 +3,6 @@ const displayMain = document.getElementById('display-main');
 // ============================================================= //
 
 
-
 // Function that adds event listeners to numbers
 for (let i = 0; i <= 9; i++) {
     const btn = document.getElementById('btn' + i);
@@ -45,7 +44,7 @@ const btnBackspace = document.getElementById('btnBackspace')
         displayText = displayMain.textContent.slice(0, -1);
     }
  displayMain.innerHTML = displayText;
-})
+});
 
 // AC - All Clear button logic and event listener
 const btnClear = document.getElementById('btnClear')
@@ -114,6 +113,4 @@ const btnCalculate = document.getElementById('btnCalculate')
             resetToggleOperator();
         break;
     }   
-})
-
-
+});
