@@ -12,12 +12,13 @@ button{
 .main-container{
     background-color: #27374D;
     border: 2px solid #526D82;
+    width: 350px;
+    height: 550px;
 }
-.display-continer{
+.display-container{
+    display: flex;
+    flex-direction: column;
     border: 2px solid #526D82;
-}
-.display{
-    border-bottom: 2px solid #526D82;
 }
 .button-number{
     background-color: #DDE6ED;
@@ -33,7 +34,7 @@ footer{
 
 @media screen and (max-width: 800px){
     body{
-        padding-top: 7vh;
+        padding: 2vh 2vh;
         height: 100vh;
     }
     .main-container{
@@ -43,7 +44,7 @@ footer{
         height: 100vh;
         border-radius: 30px;
     }
-    .display-continer{
+    .display-container{
         height: 28vh;
         border-radius: 30px;
         margin: 10px;
@@ -57,7 +58,7 @@ footer{
         margin: 10px 10px;
         font-size: 26px;
         background-color: white;
-        border-radius: 30px;
+        border-radius: 10px;
     }
     .calculator-container{
         display: grid;
@@ -81,7 +82,7 @@ footer{
         border-radius: 10px;
         justify-self: center;
     }
-    .display-continer{
+    .display-container{
         height: 23vh;
         border-radius: 10px;
         margin: 10px;
