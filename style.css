@@ -1,42 +1,100 @@
 body {
     margin: 0px;
-    padding: 0px;
+    padding: 0vh 10vh;
+    background-color: #fcc718f5;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    border: 2px solid #526D82;
+    background-color: #9DB2BF;
+}
+.main-container{
+    background-color: #27374D;
+    border: 2px solid #526D82;
+}
+.display-continer{
+    border: 2px solid #526D82;
+}
+.display{
+    border-bottom: 2px solid #526D82;
+}
+.button-number{
+    background-color: #DDE6ED;
+}
+.button-sign{
+    background-color: #DDE6ED;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 800px){
+    body{
+        padding-top: 7vh;
+        height: 100vh;
+    }
     .main-container{
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 100vh;
-        border: 2px solid rgb(204, 170, 170);
-        margin: 15px;
         border-radius: 30px;
     }
     .display-continer{
         height: 28vh;
-        border: 2px solid rgb(204, 170, 170);
         border-radius: 30px;
         margin: 10px;
     }
     .display{
         height: 90%;
         margin: 0px 25px;
-        border-bottom: 2px solid rgb(204, 170, 170);
     }
 
     button {
         margin: 10px 10px;
         font-size: 26px;
         background-color: white;
-        border: 2px solid rgb(204, 170, 170);
         border-radius: 30px;
     }
-    .button-number{
-        background-color: #FFFFFF;
+    .calculator-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 100%;
     }
-    .button-sign{
-        background-color: #EDF6FF;
+}
+
+@media screen and (min-width: 800px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 550px;
+        border-radius: 10px;
+        justify-self: center;
+    }
+    .display-continer{
+        height: 23vh;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    .display{
+        height: 90%;
+        margin: 0px 25px;
+    }
+
+    button {
+        margin: 10px 10px;
+        font-size: 22px;
+        border-radius: 10px;
     }
     .calculator-container{
         display: grid;
