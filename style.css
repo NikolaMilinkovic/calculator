@@ -24,12 +24,17 @@ body {
     font-family: 'Quicksand', 'Roboto', sans-serif;
     animation: 1.5s fadeInUp;
 }
-button{
+
+.key{
+    background-color: #DDE6ED;
     border: 2px solid #526D82;
-    background-color: #9DB2BF;
     font-family: 'Quicksand', 'Roboto', sans-serif;
     box-shadow: rgba(0, 0, 0, 0.15) 5.95px 5.95px 2.6px;
     cursor: pointer;
+}
+.clicked{
+    background-color: #84b0d1;
+    transform: translateY(+0.13rem);
 }
 .calculator-container{
     user-select: none;
@@ -56,12 +61,7 @@ button{
     word-wrap: break-word;
     min-height: 35px;
 }
-.button-number{
-    background-color: #DDE6ED;
-}
-.button-sign{
-    background-color: #DDE6ED;
-}
+
 footer{
     margin-top: 2vh;
     display: flex;
@@ -95,7 +95,7 @@ footer{
         margin-top: 2vh;
         font-size: 30px;
     }
-    button {
+    .key {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -145,7 +145,7 @@ footer{
     .display-main{
         font-size: 36px;
     }
-    button {
+    .key {
         margin: 10px 10px;
         font-size: 22px;
         border-radius: 10px;
