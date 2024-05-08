@@ -1,7 +1,12 @@
-# Odin project - Calculator
+![Example Image](./Screenshot_415.png)
 
-<p>This project is a part of The Odin Project curriculum https://www.theodinproject.com/.</p>
-<br>
+# Calculator
+Calculator app that I personaly use on my mobile phone. One of my older project that turned out better than expected for the level of skills that I had while working on it.
 
-**Live link:** https://nikolamilinkovic.github.io/calculator/
+[Live Demo](https://nikolamilinkovic.github.io/calculator/) ✨
 
+**🧭 Possible Future Implementations**
+- Add more arithmetic operations
+
+## 💻 Built With
+![javascript](https://skillicons.dev/icons?i=js,html,css&perline=10)
